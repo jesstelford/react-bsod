@@ -26,6 +26,6 @@
     "react": "^0.14.0 || ^15.0.0"
   },
   "dependencies": {
-    "redbox-react": "^1.2.10"
+    "redbox-react": "^1.3.0"
   }
 }

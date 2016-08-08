@@ -6,9 +6,7 @@ var styles = require('redbox-react/lib/style').default
 styles.redbox.background = '#0000A0'
 styles.redbox.overflow = 'auto'
 styles.redbox.borderRadius = '5% / 50%'
-// "redbox-target" is for targeting with CSS as redbox-react doesn't accept a
-// className prop. Hacky, but effective.
-styles.redbox.fontFamily = "'PerfectDOSVGA', sans-serif, redbox-target"
+styles.redbox.fontFamily = "'PerfectDOSVGA', sans-serif"
 styles.redbox.padding = '1% 4%'
 styles.redbox.boxShadow = 'rgba(255, 255, 255, 0.2) 2em 7em 10em -1em inset, rgba(0, 0, 0, 0.2) -20px -7em 10em -1em inset'
 styles.redbox.zIndex = 9998
@@ -61,19 +59,18 @@ var BSOD = React.createClass({
           '  font-weight: 400;' +
           '}' +
 
-          // Target the element with an inline style containing "redbox-target"
-          '[style*=redbox-target]:before {' +
+          '.redbox-target:before {' +
           '  content: "A problem has been detected and React has been shut down to prevent damage to your computer.";' +
           '  margin-bottom: 2em;' +
           '}' +
 
-          '[style*=redbox-target]:after {' +
+          '.redbox-target:after {' +
           '  content: "Technical information: \\A\\A *** STOP: 0x000000005 (0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000)";' +
           '  margin-top: 2em;' +
           '}' +
 
-          '[style*=redbox-target]:before,' +
-          '[style*=redbox-target]:after {' +
+          '.redbox-target:before,' +
+          '.redbox-target:after {' +
           '  white-space: pre;' +
           '  display: block;' +
           '}'
@@ -88,7 +85,7 @@ var BSOD = React.createClass({
           editorScheme: this.props.editorScheme,
           useLines: this.props.useLines,
           useColumns: this.props.useColumns,
-          className: 'foobar'
+          className: 'redbox-target'
         }
       )
     )
