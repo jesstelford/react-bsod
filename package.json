@@ -1,0 +1,31 @@
+{
+  "name": "react-bsod",
+  "version": "1.0.0",
+  "description": "A Blue Screen Of Death (bsod) component to display your errors.",
+  "main": "index.js",
+  "keywords": [
+    "blue-screen-of-death",
+    "bsod",
+    "react",
+    "react-native"
+  ],
+  "author": "Jess Telford <hi@jes.st> (http://jes.st)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesstelford/react-bsod.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jesstelford/react-bsod/issues"
+  },
+  "homepage": "https://github.com/jesstelford/react-bsod",
+  "devDependencies": {
+    "react": "^0.14.0 || ^15.0.0"
+  },
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0"
+  },
+  "dependencies": {
+    "redbox-react": "^1.2.10"
+  }
+}

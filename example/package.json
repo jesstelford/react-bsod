@@ -1,0 +1,33 @@
+{
+  "name": "react-bsod-example",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A Blue Screen Of Death (bsod) example.",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify index.js > out.js"
+  },
+  "keywords": [
+    "blue-screen-of-death",
+    "bsod",
+    "react",
+    "react-native"
+  ],
+  "author": "Jess Telford <hi@jes.st> (http://jes.st)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesstelford/react-bsod.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jesstelford/react-bsod/issues"
+  },
+  "homepage": "https://github.com/jesstelford/react-bsod",
+  "dependencies": {
+    "react": "^0.14.0 || ^15.0.0",
+    "redbox-react": "^1.2.10"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.0"
+  }
+}
