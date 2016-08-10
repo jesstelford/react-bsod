@@ -31,17 +31,6 @@ var BSOD = React.createClass({
 
   propTypes: RedBox.propTypes,
 
-  componentDidMount: function componentDidMount() {
-    // Set a background colour for behind the border-radius
-    this._oldBodyBgColor = document.body.style.backgroundColor;
-    document.body.style.backgroundColor = 'black';
-  },
-
-  componentWillUnmount: function componentWillUnmount() {
-    // undo the background colour change
-    document.body.style.backgroundColor = this._oldBodyBgColor;
-  },
-
   render: function render() {
     return React.createElement(
       'div',
@@ -57,6 +46,10 @@ var BSOD = React.createClass({
           '  font-family: PerfectDOSVGA;' +
           '  src: url("https://npmcdn.com/react-bsod/static/perfect-dos-vga-437.ttf");' +
           '  font-weight: 400;' +
+          '}' +
+
+          'body {' +
+          '  background-color: black !important;' +
           '}' +
 
           '.redbox-target:before {' +
