@@ -14,7 +14,6 @@ styles.redbox = {
   textAlign: 'left',
   fontSize: '16px',
   lineHeight: '1.2',
-  background: 'rgb(0, 0, 160)'
 }
 
 styles.stack.fontFamily = "'PerfectDOSVGA', monospace"
@@ -25,7 +24,7 @@ var overlayStyles = {
   // Make this a rounded-corner transparent box
   position: 'fixed',
   boxSizing: 'content-box', // So we can size just the content, excluding the border
-  width: '100vw', // Set the content size to fill the screen
+  width: '100%', // Set the content size to fill the screen
   height: '100vh',
 
   // Curved edges roughly like what a CRT looked like
@@ -36,7 +35,7 @@ var overlayStyles = {
     'rgba(0, 0, 0, 0.2) -20px -7em 10em -1em inset,' +
 
     // makes the black outline of the "CRT", leaving the box to be transparent
-    'black 0 0 0 100vw',
+    'rgba(0, 0, 0, 1) 0 0 0 10vw',
 
   // Give it that old school CRT pixelated feel
   // Thanks to http://codepen.io/lbebber/pen/XJRdrV
@@ -92,6 +91,10 @@ var BSODError = React.createClass({
           'body, html {' +
           '  padding: 0 !important;' +
           '  margin: 0 !important;' +
+          '}' +
+
+          'body {' +
+          '  background: rgb(0, 0, 160);' +
           '}' +
 
           'body > .bsod-hidden {' +
