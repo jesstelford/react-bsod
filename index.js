@@ -66,7 +66,7 @@ var BSODError = React.createClass({
            */
           '@font-face {' +
           '  font-family: PerfectDOSVGA;' +
-          '  src: url("https://npmcdn.com/react-bsod/static/perfect-dos-vga-437.ttf");' +
+          '  src: url("https://unpkg.com/react-bsod/static/perfect-dos-vga-437.ttf");' +
           '  font-weight: 400;' +
           '}' +
 
