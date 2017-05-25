@@ -1,9 +1,10 @@
 var React = require('react')
 var ReactDOM = require('react-dom')
+var createReactClass = require('create-react-class')
 var BSOD = require('../')
 
 // A component which throws an error
-var Foo = React.createClass({
+var Foo = createReactClass({
   render: function render() {
     this.props()
   }

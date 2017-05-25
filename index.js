@@ -1,5 +1,6 @@
 var React = require('react')
 var ReactDOM = require('react-dom')
+var createReactClass = require('create-react-class')
 var RedBox = require('redbox-react').default
 var styles = require('redbox-react/lib/style').default
 
@@ -49,7 +50,7 @@ var overlayStyles = {
   pointerEvents: 'none',
 }
 
-var BSODError = React.createClass({
+var BSODError = createReactClass({
 
   propTypes: RedBox.propTypes,
 
@@ -118,7 +119,7 @@ var BSODError = React.createClass({
   }
 })
 
-var BSOD = React.createClass({
+var BSOD = createReactClass({
 
   propTypes: BSODError.propTypes,
 
