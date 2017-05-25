@@ -1,6 +1,6 @@
 {
   "name": "react-bsod",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A Blue Screen Of Death (bsod) component to display your errors.",
   "main": "index.js",
   "keywords": [
